@@ -4,10 +4,6 @@ $("document").ready(function () {
     const $cell = $(".cell");
     const $replay = $('.reset');
 
-
-    // const hover = function(){
-    //     $cell.hover.text("");
-    // }
     // this function to check each winning condition by checking the added class
     const winner = function (player) {
         
@@ -52,7 +48,6 @@ $("document").ready(function () {
         if (playerTurn) {
             $(this).text('X');
             $(this).addClass('xPlayer');
-            $(this).mouseEnter()
             $(this).unbind();
             if(winner('xPlayer')){
                 setTimeout (()=>{
@@ -83,9 +78,7 @@ $("document").ready(function () {
                 $cell.unbind();
                     }
     }
-        playerTurn = !playerTurn; // switch player turn 
-
-        
+        playerTurn = !playerTurn; // switch player turn         
     }
     // we use function to restart the game.
     const reset = function(){
@@ -101,9 +94,7 @@ $("document").ready(function () {
      $('#c9').text("");$("#c9").removeClass('oPlayer');$("#c9").removeClass('xPlayer'); $('#c9').addClass('cell');
      $cell.click(play);
      playerTurn = true;
-    
     }
-
 $replay.click(reset);
 $cell.click(play);
 });

@@ -17,7 +17,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     /* background-color: aqua; */
-    width: 700px;
+    width:  550px;
     height: 500px;
     margin: 0 auto;
     background-color: black;
@@ -31,6 +31,7 @@ body {
     font-size: 140px;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
+    padding: auto;
     
 }
 .cell:hover{
@@ -51,11 +52,15 @@ body {
     /* background-color: rgb(230,230,230) !important; */
     color : whitesmoke !important; 
     background-color: black !important ;
+    border: whitesmoke solid 1px;
+    font-family: 'Fredoka One', cursive;
 }
 .oPlayer{
     color : whitesmoke !important; 
     /* background-color: rgb(230,230,230) !important; */
     background-color: black !important ;
+        border: whitesmoke solid 1px;
+        font-family: 'Fredoka One', cursive;
 }
 .reset{
     background: silver;
